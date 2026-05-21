@@ -88,7 +88,7 @@ pipeline {
 
                 sh '''
                 docker stop $BACKEND_CONTAINER || true
-                docker rm $BACKEND_CONTAINER || true
+                docker rm -f $BACKEND_CONTAINER || true
 
                 docker pull $BACKEND_IMAGE
 
