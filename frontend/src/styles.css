@@ -1,0 +1,80 @@
+* {
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+.auth-box,
+.operation-card,
+.result-card,
+.selector-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.selector-box {
+  display: flex;
+  gap: 20px;
+}
+
+.selector-box div {
+  flex: 1;
+}
+
+.quantity-box {
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.danger-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.result-card p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .selector-box {
+    flex-direction: column;
+  }
+}
